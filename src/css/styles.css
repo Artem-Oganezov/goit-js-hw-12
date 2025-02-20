@@ -1,0 +1,121 @@
+@import url('./reset.css');
+@import url('./base.css');
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.search_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  margin-left: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #6e0e0e;
+}
+.search_btn:hover {
+  background: #c41313;
+}
+
+.search_input {
+  border: 1px solid #808080;
+  outline: none;
+  border-radius: 4px;
+  padding-left: 16px;
+  width: 256px;
+  height: 37px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+}
+
+.search_input:hover {
+  border: 1px solid #000;
+}
+.search_input:focus {
+  border: 1px solid #4e75ff;
+  color: #2e2f42;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  border-radius: 4px;
+  padding-top: 30px;
+  max-width: 1134px;
+  gap: 24px;
+}
+
+.gallery-item {
+  width: 360px;
+  height: 200px;
+  border: 1px solid #6e0e0e;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 152px;
+  object-fit: cover;
+}
+
+.photo-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+td {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.name-info {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  justify-content: space-evenly;
+}
+
+.total {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #b11b1b;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    border-radius: 4px;
+    padding-top: 30px;
+    max-width: 1134px;
+    gap: 24px;
+  }
+}
